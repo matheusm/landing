@@ -1,0 +1,75 @@
+.home__buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.home__buttons button {
+  background-color: white;
+  color: #969393;
+  border: 0;
+  display: flex;
+  align-items: center;
+  padding: 8px 40px;
+  border-radius: 4px;
+}
+.home__buttons button svg {
+  margin-right: 4px;
+}
+
+.home__buttons button:first-child {
+  margin-right: 8px;
+}
+
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: left1;
+}
+.item3 {
+  grid-area: left2;
+}
+.item4 {
+  grid-area: right1;
+  padding: 0 !important;
+}
+.item4 img {
+  max-width: 100%;
+  height: calc(100% - 48px);
+  object-fit: cover;
+}
+.item5 {
+  grid-area: footer1;
+}
+.item6 {
+  grid-area: footer2;
+  padding: 0 !important;
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas:
+    "header header"
+    "left1 right1"
+    "left2 right1"
+    "footer1 footer1"
+    "footer2 footer2";
+}
+
+.grid-container > div {
+  padding: 16px;
+}
+
+.--box {
+  background-color: white;
+  -webkit-box-shadow: 4px 3px 5px -4px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 4px 3px 5px -4px rgba(0, 0, 0, 0.17);
+  box-shadow: 4px 3px 5px -4px rgba(0, 0, 0, 0.17);
+}
